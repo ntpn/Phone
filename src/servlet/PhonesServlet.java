@@ -17,7 +17,7 @@ import javabean.SetOfPhones;
 /**
  * Servlet implementation class PhonesServlet
  */
-@WebServlet("/PhonesServlet")
+@WebServlet("/home")
 public class PhonesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -49,7 +49,7 @@ public class PhonesServlet extends HttpServlet {
 		request.setAttribute("input", input);
 		request.setAttribute("mode", mode);
 		request.setAttribute("error", error);
-		request.setAttribute("setOfPhones", setOfPhones);
+		request.setAttribute("listOfPhones", setOfPhones);
 		request.setAttribute("pages", pages);
 		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/web/phones.jsp");
 		dispatcher.forward(request, response);

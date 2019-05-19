@@ -17,7 +17,7 @@ import javabean.PhoneInfo;
 /**
  * Servlet implementation class PhoneDetailServlet
  */
-@WebServlet("/PhoneDetailServlet")
+@WebServlet("/phonedetail")
 public class PhoneDetailServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
